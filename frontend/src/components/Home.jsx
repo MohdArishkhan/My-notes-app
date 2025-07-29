@@ -107,11 +107,8 @@ const Home = () => {
             </div> */}
 
             {/* 🔄 Create Note Button with Icon Spin */}
-            <button
-                onClick={() => setShowModal(true)}
-                className="fixed bottom-6 right-6 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 hover:from-indigo-600 hover:to-blue-500 text-white shadow-xl rounded-full px-5 py-3 flex items-center gap-3 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ring-2 ring-white/20 hover:ring-white cursor-pointer group"
-            >
-                <span className="text-2xl leading-none transition-transform duration-500 group-hover:rotate-180">➕</span>
+            <button onClick={() => setShowModal(true)} className="create-note-button">
+                <span className="icon">➕</span>
                 <span className="hidden sm:inline">Create Note</span>
             </button>
             {showModal && (
@@ -122,7 +119,7 @@ const Home = () => {
                 />
             )}
 
-           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {notes.map((note) => (
                     <div
                         key={note._id}

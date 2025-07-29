@@ -25,7 +25,7 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className="fixed bottom-6 left-6 z-[9999] bg-blue-950 text-white p-4 rounded-full shadow-lg flex items-center gap-4 ring-1 ring-blue-400">
+    <div className="fixed bottom-6 left-6 z-30 bg-blue-950 text-white p-4 rounded-full shadow-lg flex items-center gap-4 ring-1 ring-blue-400 flex-nowrap max-w-full overflow-x-auto">
       <audio ref={audioRef} src="/illenium-lifeline.mp3" loop />
 
       {/* ▶️ Play / Pause Button */}
@@ -37,7 +37,7 @@ const MusicPlayer = () => {
       </button>
 
       {/* 👋 Hello text */}
-      <span className="text-white font-medium">For my cuties Lex & Cad</span>
+      <span className="text-white font-medium truncate max-w-[200px]">For my cuties Lex & Cad</span>
 
       {/* 🔊 Volume Slider */}
       <input
