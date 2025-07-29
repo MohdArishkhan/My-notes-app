@@ -40,7 +40,7 @@ function App() {
   if (loading) return <div className="text-center p-4">Loading...</div>; 
 
   return (
-    <div className="min-h-screen bg-blue-200">
+    <div className="w-full min-h-screen bg-blue-200 overflow-x-hidden">
       <Navbar user={user} setUser={setUser} />
         <MusicPlayer />
       <Routes>

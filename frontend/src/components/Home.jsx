@@ -90,7 +90,7 @@ const Home = () => {
     };
 
     return (
-        <div className="container mx-auto px-4 py-8 min-h-screen">
+        <div className="w-full max-w-7xl mx-auto px-4 py-8 min-h-screen">
             {error && (
                 <p className="text-red-400 mb-4 text-center text-lg">{error}</p>
             )}
@@ -122,7 +122,7 @@ const Home = () => {
                 />
             )}
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {notes.map((note) => (
                     <div
                         key={note._id}
