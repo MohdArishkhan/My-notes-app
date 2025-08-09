@@ -5,7 +5,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Home from "./components/Home";
 import axios from "axios";
-import MusicPlayer from "./components/musicPlayer";
+// import MusicPlayer from "./components/musicPlayer";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="w-full min-h-screen bg-blue-200 overflow-x-hidden">
       <Navbar user={user} setUser={setUser} />
-        <MusicPlayer />
+        {/* <MusicPlayer /> */}
       <Routes>
         <Route
           path="/login"

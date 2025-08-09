@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import MusicPlayer from "./musicPlayer";
+// import MusicPlayer from "./musicPlayer";
 
 const Navbar = ({ user, setUser }) => {
   const [search, setSearch] = useState("");
@@ -33,10 +33,10 @@ const Navbar = ({ user, setUser }) => {
         {/* Middle - Music + Search */}
         {user && (
           <div className="flex flex-col sm:flex-row items-center justify-start gap-4 flex-grow">
-            {/* Music Player */}
+            {/* Music Player
             <div className="w-full sm:w-40">
               <MusicPlayer />
-            </div>
+            </div> */}
 
             {/* Search Input */}
             <div className="relative w-full sm:w-64">
